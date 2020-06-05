@@ -1,13 +1,23 @@
 # Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis
 
-To repeat the figure 1 (left), run 
-`python main.py`
+In the folder `optimizer`, we implemented the policy evaluation algorithms used in this paper (including TD, TDC, VRTD, and VRTDC). In `garnet.py`, we implemented the Garnet problem enviroment. 
 
-To repeat the figure 1 (right), run 
-`python test.py`
+## Compare the convergence curve among four algorithms
 
-To repeat the figure 2 (left), run 
-`python frozen_lake.py`
+The comparision among four algorithms is implemented in `main.py` for the Garnet problem and `frozen_lake.py` for the Frozen Lake enviroment. Run
 
-To repeat the figure 2 (right), run 
-`python frozen_lake_test.py`
+* `python main.py`, and
+
+* `python frozen_lake.py`
+
+to repeat the experiments.
+
+## Compare the asymptotic error among VRTD and VRTDC
+
+The comparision between the asymptotic errors of VRTD and VRTDC is implemented in `test.py` for the Garnet problem and `frozen_lake_test.py` for the Frozen Lake enviroment. Run
+
+* `python test.py`, and 
+
+* `python frozen_lake_test.py`
+
+to repeat the experiments. Or `python testmul.py` to use multiple cores of CPU for different trajectories.
