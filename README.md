@@ -1,6 +1,9 @@
 # Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis
 
-In the folder `optimizer`, we implemented the policy evaluation algorithms used in this paper (including TD, TDC, VRTD, and VRTDC). In `garnet.py`, we implemented the Garnet problem enviroment. 
+TDC algorithm is a classical policy evaluation algorithm which can guarantee convergence in the off-policy setting. This repo provides the experiments codes for the newly proposed varaince-reduced TDC algorithm in the paper, *Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis*. The algorithm is presented as follow,
+![VRTDC Algorithm](/figs/alg.png)
+
+In the folder `optimizer`, we implemented the policy evaluation algorithms used in this paper (including TD, TDC, VRTD, and VRTDC). In `garnet.py`, we implemented the Garnet problem enviroment, which is similar to the environment provided in OpenAI but supports more custumized setting and includes more environment information including the transition kernel and stationary distribution under a specified behavior policy. 
 
 ## Compare the convergence curve among four algorithms
 
@@ -21,3 +24,8 @@ The comparision between the asymptotic errors of VRTD and VRTDC is implemented i
 * `python frozen_lake_test.py`
 
 to repeat the experiments. Or `python testmul.py` to use multiple cores of CPU for different trajectories.
+
+## Experiments Results
+Our experiment results show that VRTDC can outperform TD, TDC, and variance-reduced TD algorithm in both of the Garnet problem and the Frozen Lake environment.
+![Garnet Problem](/figs/fig1.png)
+![Frozen Lake](/figs/fig2.png)
