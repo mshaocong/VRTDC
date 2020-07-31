@@ -26,6 +26,7 @@ The comparision between the asymptotic errors of VRTD and VRTDC is implemented i
 to repeat the experiments. Or `python testmul.py` to use multiple cores of CPU for different trajectories.
 
 ## Experiments Results
-Our experiment results show that VRTDC can outperform TD, TDC, and variance-reduced TD algorithm in both of the Garnet problem and the Frozen Lake environment.
+Our experiment results show that VRTDC can outperform TD, TDC, and variance-reduced TD algorithm in the Garnet problem. The left figure shows VRTDC requires less psudo-gradient computations for achieving the same precision. And the right figure shows VRTDC always has smaller asymptotic error compared to VRTD.
 ![Garnet Problem](/figs/fig1.png)
+For the Frozen Lake environment, VRTDC can also outperform TD, TDC, and variance-reduced TD algorithm. The left figure shows VRTDC requires less psudo-gradient computations for achieving the same precision. And the right figure shows VRTDC always has smaller asymptotic error compared to VRTD.
 ![Frozen Lake](/figs/fig2.png)
