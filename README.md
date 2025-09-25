@@ -1,4 +1,4 @@
-# Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis
+# [NeurIPS 2020] Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis
 
 TDC algorithm is a classical policy evaluation algorithm which can guarantee convergence in the off-policy setting. This repo provides the experiments codes for the newly proposed varaince-reduced TDC algorithm in the paper, *Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis*. The algorithm is presented as follow,
 ![VRTDC Algorithm](/figs/alg.png)
